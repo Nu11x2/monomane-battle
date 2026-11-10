@@ -1,0 +1,18 @@
+{
+  "name": "monomane-battle",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev -w client",
+    "dev:server": "npm run dev -w server",
+    "build": "npm run build -w client && npm run build -w server"
+  },
+  "engines": {
+    "node": "26.13.0",
+    "npm": "11.20.0"
+  }
+}
